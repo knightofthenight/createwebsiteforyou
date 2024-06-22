@@ -292,7 +292,9 @@
       {{ 'accessibility.skip_to_text' | t }}
     </a>
 
-    {% render 'my-snippet' %}
+    {% render 'my-snippet'.(
+      word: 'hello'
+    )%}
     
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
