@@ -293,7 +293,8 @@
     </a>
 
     {% render 'my-snippet'.(
-      word: 'hello'
+      word: 'hello',
+      second_word: 'word2'
     )%}
     
     {%- if settings.cart_type == 'drawer' -%}
